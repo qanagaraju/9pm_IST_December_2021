@@ -1,0 +1,3 @@
+App_Hooks\Hooks.class
+CucumberTestCases\Amazon_Search_Definition_Class.class
+CucumberTestCases\TestRunner.class

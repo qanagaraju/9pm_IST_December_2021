@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.66 s <<< FAILURE! - in TestSuite
+setUpClass(CucumberTestCases.TestRunner)  Time elapsed: 1.46 s  <<< FAILURE!
+java.lang.IllegalArgumentException: 
+Couldn't create a file output stream for 'target\cucumber-reports'.
+Make sure the the file isn't a directory.
+
+Note: This usually happens when plugins write to colliding paths.
+For example: 'json:target/cucumber/report.json, html:target/cucumber'
+You can fix this by making the paths do no collide.
+For example: 'json:target/cucumber/report.json, html:target/cucumber/report.html'
+The details are in the stack trace below:
+Caused by: java.io.FileNotFoundException: target\cucumber-reports (Access is denied)
+
