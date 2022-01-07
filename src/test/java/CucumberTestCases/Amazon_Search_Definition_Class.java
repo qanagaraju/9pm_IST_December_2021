@@ -31,6 +31,7 @@ public class Amazon_Search_Definition_Class
 	    
 		pageElements = PageFactory.initElements(driver, Search_Elements.class);
 		pageElements.insert_product_details(ProductDetails);
+		System.out.println("User enters product details"+ProductDetails);
 		
 		
 		
@@ -41,6 +42,7 @@ public class Amazon_Search_Definition_Class
 	public void user_click_search_button() throws InterruptedException {
 		pageElements = PageFactory.initElements(driver, Search_Elements.class);
 		pageElements.user_click_search_button();
+		System.out.println("User clicking search button");
 		
 		Thread.sleep(3000);
 		
@@ -52,6 +54,7 @@ public class Amazon_Search_Definition_Class
 	   
 		pageElements = PageFactory.initElements(driver, Search_Elements.class);
 		pageElements.verify_productName();
+		System.out.println("Verify user product name");
 	}
 	
 	
@@ -59,6 +62,7 @@ public class Amazon_Search_Definition_Class
 	public void user_close_test() {
 	   
 		driver.close();
+		System.out.println("user closing browser");
 	}
 	
 	
